@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <title></title>
+
+    <meta charset="UTF-8"/>
+    <meta name="author" content="João FS"/>
+    <meta name="description" content="descrição do projeto"/>
+
+    <link rel="stylesheet" type="text/css" href="estilo.css"/>
+
+</head>
+
+ <body>
+  <div>
+
+ <header id="cabnav">
+    <h1>A revolução da Musica</h1>
+    <h3>Musica &nbsp; &nbsp; &nbsp;históeia</h3>
+    <img src="imagem/clave-de-sol.png" width="75px"/>
+
+    <nav id="nava">
+   <h1> Menu principal</h1>
+
+    <a href="index.html" target="pagina">Home</a>
+    <a href="especificacao.html" target="pagina">Especificações</a>
+    <a href="fotos.html" target="pgina">Fotos</a>
+    <a href="multi.html" target="pagina">Multi Midia</a>
+    <a href="fale.html" target="pagina">Fale com nosco</a>
+    </nav>
+</header>
+</br>
+</br>
+</br>
+
+<form method="post" action="mailto:email de contato@">
+<fieldset id="usuario">
+<legend>Indentificação do usuario</legend>
+    <p><label for="cnome">Nome</label>
+        <input type="text" name="nome" id="cnome" size="20" maxlength="30" placeholder="Nome completo"/>
+    </p>
+
+    <p><label for="ce-mail">E-mail:</label>
+        <input type="email" name="e-mail" id="ce-mail" size="20" maxlength="30" placeholder="E-mail@"/>
+    </p>
+    <p><label for="csenha">Senha</label>
+        <input type="password" name="senha" id="csenha" size="20" maxlength="30" placeholder="Senha"/>
+    </p>
+    
+
+<fieldset>
+    
+    <legend>Sexo:</legend>
+        <input type="radio" name="sexo" id="copcao" checked/><label for="copcao">Masculino</label>
+</br>   
+        <input type="radio" name="sexo" id="cupcao"/><label for="cupcao">Feminino</label>
+
+</fieldset>
+
+        <p><label for="cdata">Data de nascimento</label>
+            <input type="date" name="data" id="cdata"/>
+        </p>
+</fieldset>
+
+<fieldset id="endereco">
+<legend>Endereço do Usuario</legend>
+
+<p><label for="clogradouro">Logradouro</label>
+    <input type="text" name="logradouro" id="clogradouro" size="30" maxlength="80" placeholder="rua"/>
+</p>
+<p><label for="cnumero">numero</label>
+    <input type="number" name="numero" id="cnumero" size="10" max="99999" min="0" placeholder="numero"/>
+</p>
+<p><label for="cestado">estado</label>
+    <select name="estado" id="cestado">
+    <optgroup label="Região Sudeste">
+        <option value="RJ">Rio de janeiro</option>
+        <option value="SP">São Paulo</option>
+        <option value="MG">Minas Gerais</option>
+    </optgroup>
+
+    <optgroup label="Região Sul">
+        <option value="PR">Paraná</option>
+        <option value="SC">Santa catarina</option>
+        <option value="RS">Rio grande do Sul</option>
+    </optgroup>
+    <optgroup label="Região Norte">
+        <option value="RC" checked>Recife</option>
+    </optgroup>
+
+    </select>
+
+<p><label for="ccidade">Cidade</label>
+    <input type="text" name="cidade" id="ccidade" list="cidadess">
+        <datalist id="cidadess">
+        <option value="Rio de janeiro"></option>
+        <option value="nova iguaçu"></option>
+        <option value="niteroi"></option>
+        <option value="belfo"></option>
+        <option value="llllll"></option>
+    </datalist>
+
+    </select>
+    
+</p>
+</fieldset>
+
+<fieldset id="mensagem">
+<legend>mensagem do usuario</legend>
+<p>Grau de Urgencia</p>
+   <p> min&nbsp;<input type="range" name="grau" id="cgrau" min="0" max="10" step="2"/>&nbsp;max
+</p>
+<p>Complemento</p><textarea cols="30" rows="10"></textarea>
+</fieldset>
+
+<fieldset id="pedido">
+<legend>quero um Instrumento</legend>
+<p><input type="checkbox" name="box" id="xbox"/>Gostaria de adquirir um google Intrumento </p>
+
+<p>cor<input type="color" name="cor" id="ccor"/></p>
+<p>quantidade<input type="number" name="quan" id="cquan" min="1" max="10" value="0"/></p>
+<p>preço: R$</p>
+<button>Enviar</button>
+</fieldset>
+
+
+</form>
+</div>
+</body>
+</html>

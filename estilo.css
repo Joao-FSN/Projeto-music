@@ -1,0 +1,246 @@
+@charset "UTF-9";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+@font-face{
+    font-family:'loco';
+src:url("fonts/RobotoMono-Regular.ttf");
+}
+
+
+p{
+    text-align:justify;
+    text-indent:50px;
+}
+
+body{
+    background-color:#dddddd;
+    color:rgba(0, 0, 0, 1);
+}
+
+/*formatão de imagem*/
+
+
+figure.foto-le{
+    position:relative;
+    border:8px solid white;
+    box-shadow:1px 1px 4px black;
+    width:300px;
+    height:300px;
+
+
+}
+
+figure .foto-le img{
+    width:100%;
+    height:100%;
+
+}
+
+figure figcaption{
+    color:blue;
+    position:absolute;
+    top:0px;
+    background-color:rgba(0, 0, 0, 0.5);
+    width:100%;
+    height:100%;
+    padding:15px;
+    box-sizing:border-box;
+    opacity:0;
+
+}
+
+figure.foto-le:hover figcaption{
+    opacity:1;
+    transition:2s;
+} 
+
+/*navegçao do site*/
+nav#nava{
+    position:absolute;
+    top:20px;
+    left:250px;
+    display:block;
+}
+
+nav#nava h1{
+    display:none;
+}
+
+nav#nava a{
+    background-color:#606060;
+    color:white;
+    padding:10px;
+    margin:2px;
+    text-decoration:none;
+}
+
+nav#nava a:hover{
+    text-decoration:underline;
+    text-transform:uppercase;
+    color:blue;
+    background-color:#dddddd;
+    transition:background-color 2s;
+}
+
+/*interface e cabeçalho*/
+
+div{
+    position:relative;
+    max-width:800px;
+    min-width:400px;
+    padding:50px;
+    margin:-10px auto 20px auto;
+    border:white;
+    box-shadow:2px 2px 4px black;
+    background-color:white;
+
+}
+
+header#cabnav{
+    border-bottom:2px solid black;
+    height:150px;
+    background:url("imagem/popa.png") no-repeat 0px 77px;
+    
+}
+
+header#cabnav img{
+    position:absolute;
+    right:30px;
+    top:185px;
+}
+
+header#cabnav h1{
+    font-family:Verdana sans-serif;
+    font-size:30pt;
+    text-shadow:1px 1px 2px;
+    color:rgba(0,0,0, 0.3);
+    padding-top:-5px;
+    margin:30px 0px 0px 0px;
+}
+
+header#cabnav h3{
+    font-family:Arial sans-serif;
+    font-size:20pt;
+    color:#888888;
+    margin-top:0px;
+}
+
+/*fontes*/
+
+hgroup h1{
+    font-family:'loco';
+}
+
+hgroup h2{
+    font-family: 'Roboto', sans-serif;
+}
+
+/*divisões*/
+
+section{
+    display:block;
+    width:400px;
+    float:left;
+    border-right:2px solid #dddddd;
+    padding-right:30px;
+
+}
+
+
+aside{
+    display:block;
+    width:300px;
+    float:right;
+    
+
+}
+
+aside h3{
+    background-color:#dddddd;
+    box-shadow:1px 1px 2px black;
+    color:#606060;
+    padding:4px 0px 4px 0pxS;
+
+}
+
+aside ul{
+    background-color:rgb(241, 237, 237);
+    box-shadow:1px 1px 2px black;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+footer{
+    clear:both;
+    border-top:2px solid black;
+
+}
+
+footer p{
+    text-align:center;
+
+}
+
+footer img#image{
+    position:absolute;
+    bottom:3.9%;
+    right:50%;
+}
+
+article h2{
+    font-size:12pt;
+    background-color:#dddddd;
+    color:#606060;
+    padding:4px 0px 4px 0px;
+    margin:10px;
+
+}
+
+article header#cabart h2{
+    background-color:white;
+    margin-top:-15px;
+
+}
+
+article header#cabart h3{
+    margin-top:-5px;
+    font-size:12pt;
+    text-align:right;
+}
+
+
+/*tabela vertical-align*/
+table{
+    border:1px solid black;
+    border-spacing:0px;
+
+}
+
+table td{
+    border:1px solid black;
+    padding:15px;
+    
+   
+}
+
+td.esquerda{
+    background-color:rgb(210, 214, 248);
+}
+
+td.direita{
+    background-color:rgb(238, 104, 104);
+}
+
+caption{
+    font-family:Arial sans-serif;
+    font-size:15pt;
+    text-align:left;
+
+}
+
+table caption span{
+    display:block;
+    float:right;
+    font-size:10pt;
+    margin-top:10px;
+}
